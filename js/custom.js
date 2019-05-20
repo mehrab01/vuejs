@@ -1,10 +1,23 @@
-
-
-var app = new Vue({
-	el:'#app',
+new Vue({
+	el:"#app",
 	data:{
-		message:"helo vue js",
-		name:"mehrab  Hossain",
-		roll:"jamal hossain"
+		name: "mehrab Hossain",
+		roll: 200,
+		message: "hello vue Js"
 	}
 });
+
+
+
+new Vue({
+	el:"app-2",
+	cond:true
+});
+
+
+new vue({
+	el:"app-3",
+	con:true
+});
+
+
