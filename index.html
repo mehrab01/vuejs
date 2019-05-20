@@ -3,6 +3,13 @@
 <head>
 	<title>vue Js</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		.active{
+			color: white;
+			background-color: blue;
+			padding: 20px;
+		}
+	</style>
 </head>
 <body>
 
@@ -48,6 +55,18 @@
 	<p>Your data is : {{message}}</p>
 </div>
 
+
+
+
+
+
+<div id="list">
+	<a v-bind:href="link1.url" v-bind:class="{'active':activeLink == 'link1'}">{{link1.text}}</a>
+	<a v-bind:href="link2.url" v-bind:class="{'active':activeLink == 'link2'}">{{link2.text}}</a>
+
+	<p v-html='link'></p>
+	<p v-text='link'></p>
+</div>
 
 
 

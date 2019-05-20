@@ -63,3 +63,16 @@ new Vue({
 		message: ""
 	}
 });
+
+
+
+
+new Vue({
+	el:"#list",
+	data:{
+		link1:{text:"Facebook",url:"http://www.facebook.com"},
+		link2:{text:"Youtube",url:"http://www.youtube.com"},
+		activeLink:"link2",
+		link: '<a href="">Test Html</a>'
+	}
+});
