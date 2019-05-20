@@ -10,14 +10,56 @@ new Vue({
 
 
 new Vue({
-	el:"app-2",
+	el:"#app-2",
 	cond:true
 });
 
 
-new vue({
-	el:"app-3",
+new Vue({
+	el:"#app-3",
 	con:true
 });
 
 
+
+
+new Vue({
+	el:"#info",
+	data:{
+		c_info:[
+			{course: 'html course'},
+			{course: 'javascript course'},
+			{course: 'bootstrap 4'},
+			{course: "php tutorial"}
+		]
+	}
+});
+
+
+
+new Vue({
+	el:"#event",
+	data:{
+		message:"this is default message",
+		newMessage: ""
+	},
+	methods:{
+		reverseMessage: function(){
+			//this.message: "updated message";
+			this.message = "updated message";
+		},
+		againMessage: function(){
+			this.newMessage = "New Message";
+		}
+	}
+});
+
+
+
+
+new Vue({
+	el:"#bind",
+	data:{
+		message: ""
+	}
+});

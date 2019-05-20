@@ -25,12 +25,28 @@
 </div>
 
 
+<div id="info">
+	<p v-for="data in c_info">
+		{{data.course}}
+	</p>
+</div>
 
 
 
+<div id="event">
+	{{message}}
+	{{newMessage}}
+	<button v-on:click="reverseMessage">click here</button>
+	<button v-on:click="againMessage">Again Message</button>
+</div>
 
 
-
+<br>
+<hr>
+<div id="bind">
+	Search Data: <input type="text" v-model="message">
+	<p>Your data is : {{message}}</p>
+</div>
 
 
 
